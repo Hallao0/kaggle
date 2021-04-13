@@ -1,0 +1,27 @@
+一. 总结了整体流程
+  1. Data_expoloration
+    EDA（Exploratory Data Analysis）
+    1.1 Visualization
+    1.2 Statistical Tests
+    
+  2. Data Preprocessing
+    2.1 Missing data and Outlier
+    2.2 Dummy Variables
+    
+  3. Feature Engineering
+    3.1 Feature Selection
+    3.2 Feature Encoding
+   
+  4 Model Selection
+    4.1 Model Training
+    4.2 Cross Validation
+  
+  5. Ensemble Generation
+    5.1 Stacking
+  
+  6. Pipeline
+ 
+
+之后为每个步骤总结常用的工具库
+reference:
+https://zhuanlan.zhihu.com/p/25742261
