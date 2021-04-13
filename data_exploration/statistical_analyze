@@ -9,13 +9,12 @@
 
 3.info()
   可以看行数，列数，数据类型，多少个不为Null的行数
-  根据类型，查看哪些是
+  定类变量,eg性别；定序变量，eg教育程度；定距变量，eg价格
 
 4.describe()
   描述性统计信息：均值、标准差、最大值、最小值
   DataFrame.describe (self: ~FrameOrSeries, percentiles=None, include=None, exclude=None)
-  
-  
+ 
   
   
  
