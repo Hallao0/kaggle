@@ -1,0 +1,26 @@
+1.载入
+  path = './data/'
+  Train_data = pd.read_csv(path+'train.csv', sep=' ')
+  
+2.head() + shape
+  a = Train_data.head().append(Train_data.tail())
+  print(a)
+  Train_data.shape#shape返回（行数x列数）
+
+3.info()
+  可以看行数，列数，数据类型，多少个不为Null的行数
+  根据类型，查看哪些是
+
+4.describe()
+  描述性统计信息：均值、标准差、最大值、最小值
+  DataFrame.describe (self: ~FrameOrSeries, percentiles=None, include=None, exclude=None)
+  
+  
+  
+  
+ 
+ 
+ 
+ 
+ pandas 官网：
+ https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
