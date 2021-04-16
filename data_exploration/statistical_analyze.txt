@@ -1,0 +1,36 @@
+1.载入
+  path = './data/'
+  Train_data = pd.read_csv(path+'train.csv', sep=' ')
+  
+2.head() + shape
+  a = Train_data.head().append(Train_data.tail())
+  print(a)
+  Train_data.shape#shape返回（行数x列数）
+
+3.info()
+  可以看行数，列数，数据类型（categorical? numerical? mixed?），多少个不为Null的行数
+  定类变量,eg性别；定序变量，eg教育程度；定距变量，eg价格
+  如果是numerical的，再看是discrete, continuous, or timeseries based? —— 对应不同visualization方法
+   
+
+4.describe()
+  描述性统计信息：均值、标准差、最大值、最小值
+  DataFrame.describe (self: ~FrameOrSeries, percentiles=None, include=None, exclude=None)
+
+5.sns.FacetGrid()
+  用来作>2 维度分析时候，可以看A|B 跟标签result的关系
+
+.相关性分析 & 独立性分析
+ 
+  
+  
+通过一通分析以后，要形成一些假设，后续的动作要基于/验证这些假设，比如最终要选哪些feature到模型中。这些feature有可能是源数据
+的某列，也有可能是f(某列，某列...)
+ 
+ 
+ 
+ pandas 官网：
+ https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.describe.html
+ 
+ seaborn 官网：
+ https://seaborn.pydata.org/generated/seaborn.FacetGrid.html
