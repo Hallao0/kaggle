@@ -1,0 +1,25 @@
+1. StandardScaler:
+The standard score of a sample x is calculated as:
+z = (x - u) / s
+where u is the mean of the training samples or zero if with_mean=False, and s is the standard deviation of the training samples or one if with_std=False.
+
+Example:
+>>> from sklearn.preprocessing import StandardScaler
+>>> data = [[0, 0], [0, 0], [1, 1], [1, 1]]
+>>> scaler = StandardScaler()
+>>> print(scaler.fit(data))
+StandardScaler()
+>>> print(scaler.mean_)
+[0.5 0.5]
+>>> print(scaler.transform(data))
+[[-1. -1.]
+ [-1. -1.]
+ [ 1.  1.]
+ [ 1.  1.]]
+ 
+ 
+ 
+ 
+
+reference:
+sklearn preprocess module: https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
